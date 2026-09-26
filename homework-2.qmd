@@ -1,7 +1,7 @@
 ---
 title: "homework-2"
 author: Andrew Barefoot
-format: html
+format: pdf
 editor: visual
 ---
 
@@ -12,3 +12,18 @@ install.packages("aRtsy")
 Install.packages is how you download a package from a repo and you only have to do it once. When you library something it loads it into the current section. That is something you have to do every R session.
 
 \newpage
+
+# Packages
+
+## Question 2
+
+```{r}
+library(aRtsy)
+```
+
+The Collatz conjecture is a famous mathematics problem that is unsolved. It states that no matter what positive integer you start with, this sequence will always eventually reach 1.
+
+$f(n) = \begin{cases} n/2 & \text{if } n \equiv 0 \pmod{2} \\ 3n + 1 & \text{if } n \equiv 1 \pmod{2} \end{cases}$
+
+\newpage
+
