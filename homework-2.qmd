@@ -27,3 +27,27 @@ $f(n) = \begin{cases} n/2 & \text{if } n \equiv 0 \pmod{2} \\ 3n + 1 & \text{if 
 
 \newpage
 
+## Question 3
+
+#### part a
+
+This function generates artwork based on the sequence. It takes the number in the function and makes that number of random lines.
+
+#### part b
+
+You get a different output every time because it uses R's built in number generator instead of a fixed drawing for each number. 
+
+This is troublesome in the .qmd file because the picture may look different every time you render it. This makes it non-reproducible for anyone else.
+
+Set.seed is an integer vector, containing the random number generator state for random number generation in R. If you use a seed the rondomness will produce the exact same random result every time it is run.
+
+```{r}
+set.seed(8)
+
+canvas_collatz(
+  colors = c("blue"),
+  n = 10
+)
+```
+
+\newpage
