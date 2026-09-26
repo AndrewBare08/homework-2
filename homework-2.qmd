@@ -51,3 +51,16 @@ canvas_collatz(
 ```
 
 \newpage
+
+## Question 4
+
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 1:20
+)
+```
+
+This code is using a random number of lines to make its artwork. This is because last question the function had n = 10 which tells R to make the artwork with exactly 10 lines, where as this function uses a vector of n = 1:20, which makes the code choose a random number of lines within the vector to make its artwork.
+
+I would say yes because there is still a lot of randomness with the vector that set.seed(1) would help to control.
