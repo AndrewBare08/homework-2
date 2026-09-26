@@ -1,0 +1,14 @@
+---
+title: "homework-2"
+author: Andrew Barefoot
+format: html
+editor: visual
+---
+
+## Question 1
+
+install.packages("aRtsy")
+
+Install.packages is how you download a package from a repo and you only have to do it once. When you library something it loads it into the current section. That is something you have to do every R session.
+
+\newpage
